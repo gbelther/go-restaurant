@@ -8,7 +8,7 @@ import Input from "../Input";
 export const ModalAddFood = ({ isOpen, setIsOpen, handleAddFood }) => {
   const formRef = createRef();
 
-  const handleSubmit = async (data) => {
+  const handleSubmit = (data) => {
     handleAddFood(data);
     setIsOpen();
   };
